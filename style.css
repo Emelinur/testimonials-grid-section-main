@@ -19,30 +19,33 @@
 
   /* Scale */
   --gap: 2rem;
-   --shadow-50: 0 1000px 100px rgba(187, 185, 185, 0.25);
+  --shadow-50: 0 1000px 100px rgba(187, 185, 185, 0.25);
 }
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--ff);
+  box-sizing: border-box;
 }
 
 body {
   display: grid;
-  justify-content: center;
-  height:100svh;  
-  grid-template-rows:1fr;
   background-color: var(--grey-100);
- 
+  font-family: var(--ff);
 }
 main {
   display: grid;
-  width: 1114px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: var(--gap);
+  justify-content: center;
+  align-content: center;
+  min-height: 100svh;
+}
+
+.grid {
+  /* width: clamp(375px, calc(375px+ 739px*((100vw-375px)/(1140px-375px))), 1114px); */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-inline: auto;
   grid-template-areas:
-    "item1 item2 item3"
-    "item2 item1";
-     box-shadow: var(--shadow-50);
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 2rem;
 }
