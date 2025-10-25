@@ -19,7 +19,7 @@
 
   /* Scale */
   --gap: 2rem;
-  --shadow-50: 0 1000px 100px rgba(187, 185, 185, 0.25);
+  --shadow-50: 0 10px 40px rgba(187, 185, 185, 0.25);
 }
 * {
   margin: 0;
@@ -40,7 +40,7 @@ main {
 }
 
 .grid {
-  /* width: clamp(375px, calc(375px+ 739px*((100vw-375px)/(1140px-375px))), 1114px); */
+  width:1114px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-inline: auto;
@@ -48,4 +48,29 @@ main {
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
   gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.card{
+ border-radius:10px;
+ box-shadow:var(--shadow-50);
+ padding: 1.875rem;
+}
+.card img{
+  border-radius:50px ;
+}
+.card--violet{
+  background-color: var(--purple-500);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x:80%;
+
+ 
+}
+.card--daniel{
+  display: grid;
+  grid-area: "daniel";
+  grid-column:span 2;
+  grid-row: 1fr;
+
 }
