@@ -40,7 +40,7 @@ This project helped me strengthen my understanding of **CSS Grid** and how to st
 
 - [W3Schools – CSS Grid](https://www.w3schools.com/css/css_grid.asp)  
 - [YouTube Tutorial](https://youtu.be/T01NU_rxjgY?si=Lhxq4U7IML59N4zy)  
-- Debugging and guidance with **ChatGPT (Amber)** 💬  
+- Debugging and guidance with **ChatGPT** 💬  
 
 ---
 
